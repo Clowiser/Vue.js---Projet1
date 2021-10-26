@@ -1,16 +1,22 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld />
+  <div>
+    <router-link to='/Cities'>Cities</router-link>
+    <br>
+    <router-link to='/'>Home</router-link>
+  <div> 
+    {{ api }}
+  </div>
+  </div>
+ <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/CitiesList.vue'
+import './style/style.css'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App', 
 }
 </script>
 

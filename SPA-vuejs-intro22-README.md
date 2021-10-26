@@ -124,7 +124,7 @@ Le projet est à mener en autonomie (pas de travail en îlot).
 
 
 
-
+un id doit être unique et différent pour pouvoir l'appeller directement
 
 
 
@@ -217,7 +217,7 @@ Ajoutez la librairie à votre projet avec NPM pour afficher la valeur de `update
 
 **Question :** Prenez le temps de regarder la page github de timeago.js, qu'est ce qui vous inspire confiance, ou au contraire, méfiance?  
 
-**Votre réponse :** 
+**Votre réponse :** bah dans notre exemple, le timeago ne sert pas car la valeur entrée ne change pas. 
 
 ### 5 - Affichage des météos de plusieurs villes
 
@@ -263,7 +263,7 @@ Bouclez sur les nouvelles données pour appeler autant de fois le composant `Cit
 
 **Question :** Remarquez que nous avons ajouté une clef `id` à nos objets, pourquoi ?
 
-**Votre réponse :**
+**Votre réponse :** comme il s'agit de 2 éléments, il faut les différencier
 
 Modifiez un peu le style si besoin pour que les éléments de la liste soient mieux visibles et bien distincts.
   
@@ -295,7 +295,7 @@ const router = createRouter({})
 export default router
 ```
 
-Modifiez maintenat le fichier `main.js` afin d'utiliser le routeur nouvellement ajouté.
+Modifiez maintenant le fichier `main.js` afin d'utiliser le routeur nouvellement ajouté.
 
 Pour cela, modifiez le code afin que le résultat de `createApp(App)` soit stocké dans une variable `app`, suite à quoi ajoutez la ligne suivante :
 ```js
@@ -352,7 +352,8 @@ Pour cela, nous allons utiliser l'API [OpenWeatherMap](https://openweathermap.or
 
 Pour effectuer un test d'appel à l'API, récupérez d'abord une clé API auprès de la formatrice ou du formateur (ou créez un [compte gratuit OpenWeatherMap](https://home.openweathermap.org/users/sign_up)), puis accédez  à l'URL suivante: https://api.openweathermap.org/data/2.5/find?lat=45.188&lon=5.724&cnt=20&cluster=yes&lang=fr&units=metric&APPID=VOTRE_CLE_API
 
-Quel est le format de retour des données de l'API? Quels sont les champs qui vont vous permettre de récupérer les données météo recherchées ?
+Quel est le format de retour des données de l'API? 
+Quels sont les champs qui vont vous permettre de récupérer les données météo recherchées ? ce sont les clés comme 
 
 #### 7.1) Installation d'une librairie permettant de faire des appels HTTP
 
