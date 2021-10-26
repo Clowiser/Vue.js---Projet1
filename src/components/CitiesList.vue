@@ -1,12 +1,13 @@
 <template>
 <div class="=test">
     <h1> Cities </h1>
-    <div id="test">
-    {{ cities }}
-    </div>
-   <City  v-for="city in cities" :key="city.id" :name="city.name" :weather="city.weather" :temperature="city.temperature" :date="date" class="hello"/>
+   <City  v-for="city in cities" :key="city.id" :id="city.id" :name="city.name" :coord="city.coord" :lat="city.coord.lat" :main="city.main" :temp="city.main.temp" :date="city.dt*1000" :description="city.weather.map(({description}) => description).join('')" :main2="city.weather.map(({main}) => main).join('')" class="hello"/> 
+   {{ cities }}
    <!-- boucle for pour l'affichage des elements city DANS CitiesList-->
-</div>
+  </div>
+
+
+
 
 </template>
 <script>
@@ -21,6 +22,8 @@ data(){
   return {
     cities: [], 
     // le [] tableau vide =  "list": [info - info - etc]
+    loading: false,
+    errors: [],
   };
 },
 

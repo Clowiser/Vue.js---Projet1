@@ -8,16 +8,16 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-        path: '/Home',
+        path: '/home',
         component: Home
         },
         {
         path: '/',
-        redirect: '/Home' 
+        redirect: '/home' 
         // Ajout d'une redirection
         },
         {
-        path: '/Cities',
+        path: '/cities',
         component: CitiesList
         // Une fois le router installé et prêt à l'emploi, nous voulons maintenant déclarer une route `/cities'` affichant la liste des villes.
         // Déclarez votre tableau de routes dans le fichier `index.js` du répertoire `router`, en faisant référence au composant `CitiesList`.

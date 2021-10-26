@@ -4,9 +4,6 @@
     <router-link to='/Cities'>Cities</router-link>
     <br>
     <router-link to='/'>Home</router-link>
-  <div> 
-    {{ api }}
-  </div>
   </div>
  <router-view />
 </template>
