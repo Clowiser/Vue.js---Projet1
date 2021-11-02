@@ -1,5 +1,4 @@
 // fichier de configuration du routeur : on code la logique du router
-
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home'
 import CitiesList from '../components/CitiesList'

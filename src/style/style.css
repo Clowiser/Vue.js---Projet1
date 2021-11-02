@@ -1,5 +1,42 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#logoTitre{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+}
+
+.meteo{
+    width: 6%;
+    margin: 1%;
+}
+
 #texte{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+}
+
+img{
+    width: 13%;
+}
+
+a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.container{
+    margin-top: 3%;
 }

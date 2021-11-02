@@ -1,29 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <div>
-    <router-link to='/Cities'>Cities</router-link>
-    <br>
-    <router-link to='/'>Home</router-link>
+
+  <div id="logoTitre">
+    <img class="meteo" alt="logo météo" src="./assets/meteo.png">
+    <h1>Ville et Météo</h1>
   </div>
- <router-view />
+
+  <nav>
+    <router-link to='/Cities'><h3>Villes</h3></router-link>
+    <br>
+    <router-link to='/'><h3>Accueil</h3></router-link>
+  </nav>
+  
+  <router-view class="container" /> 
+  <!-- router-view = la partie qui est uniquement rechargée lors d'une navigation entre les "pages" -->
 </template>
 
 <script>
 import './style/style.css'
 
-
 export default {
   name: 'App', 
 }
 </script>
-
-<style> 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
